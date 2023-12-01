@@ -16,23 +16,23 @@ id="scene">
       	
       <a-assets>
         
-         <a-asset-item id="modelo" src="pay.glb"></a-asset-item>
-          <a-asset-item id="modelo1" src="rol.glb"></a-asset-item>
+         <a-asset-item id="modelo" src="blossoming_boombox.glb"></a-asset-item>
+          <a-asset-item id="modelo1" src="cartoon_whale.glb"></a-asset-item>
         
-        <a-asset-item id="modelo2" src="magnum.glb"></a-asset-item>
-     <a-asset-item id="modelo3" src="cupcake.glb"></a-asset-item>
+        <a-asset-item id="modelo2" src="little_cute_frog_tin.glb"></a-asset-item>
+     <a-asset-item id="modelo3" src="mushroom_potion.glb"></a-asset-item>
 
-	      <audio id="sound" src="pay.mp3" preload="auto"></audio>
-	<audio id="sound1" src="rol.mp3" preload="auto"></audio>
-	      <audio id="sound2" src="magnum.mp3" preload="auto"></audio>
-	      <audio id="sound3" src="Cupcakes.mp3" preload="auto"></audio>
+	      <audio id="sound" src="Ansiedad_Generalizada.mp3" preload="auto"></audio>
+	<audio id="sound1" src="Trastorno_Panico.mp3" preload="auto"></audio>
+	      <audio id="sound2" src="TOC.mp3" preload="auto"></audio>
+	      <audio id="sound3" src="TEPT.mp3" preload="auto"></audio>
       
       
       </a-assets>
 		
       
 		
-			<a-marker id="pay" type="barcode" value="25" raycaster="objects: .clickable" emitevents="true"
+			<a-marker id="1" type="barcode" value="1" raycaster="objects: .clickable" emitevents="true"
  cursor="fuse: false; rayOrigin: mouse;">
 			
 		
@@ -40,14 +40,14 @@ id="scene">
 			
 			</a-marker>
       
-			<a-marker id="rol" type="barcode" value="20" raycaster="objects: .clickable" emitevents="true"
+			<a-marker id="2" type="barcode" value="2" raycaster="objects: .clickable" emitevents="true"
  cursor="fuse: false; rayOrigin: mouse;">
 				
 			<a-entity gltf-model="#modelo1" scale="20 20 20" rotation="-90 0 0" class="clickable" gesture-handler soundhandler></a-entity>
 			
 			</a-marker>
       
-      <a-marker id="magnum" type="barcode" value="8" raycaster="objects: .clickable" emitevents="true"
+      <a-marker id="3" type="barcode" value="3" raycaster="objects: .clickable" emitevents="true"
  cursor="fuse: false; rayOrigin: mouse;">
 			
 					
@@ -55,7 +55,7 @@ id="scene">
 			
 			</a-marker>
       
-      <a-marker id="cupcake" type="barcode" value="18" raycaster="objects: .clickable" emitevents="true"
+      <a-marker id="4" type="barcode" value="4" raycaster="objects: .clickable" emitevents="true"
  cursor="fuse: false; rayOrigin: mouse;">
 			
 					
@@ -81,28 +81,28 @@ var entity4 = document.querySelector('#audio4');
 
 
 
-if (document.querySelector('#pay').object3D.visible == true) {
+if (document.querySelector('#1').object3D.visible == true) {
 entity2.components.sound.pauseSound();
 entity3.components.sound.pauseSound();
 entity4.components.sound.pauseSound();
 entity.components.sound.playSound();
 
 } 
-else if (document.querySelector('#rol').object3D.visible == true) {
+else if (document.querySelector('#2').object3D.visible == true) {
 entity.components.sound.pauseSound();
 entity3.components.sound.pauseSound();
 entity4.components.sound.pauseSound();
 entity2.components.sound.playSound();
 
 }
-else if (document.querySelector('#magnum').object3D.visible == true) {
+else if (document.querySelector('#3').object3D.visible == true) {
 entity2.components.sound.pauseSound();
 entity.components.sound.pauseSound();
 entity4.components.sound.pauseSound();
 entity3.components.sound.playSound();
 
 }
-else if (document.querySelector('#cupcake').object3D.visible == true) {
+else if (document.querySelector('#4').object3D.visible == true) {
 entity2.components.sound.pauseSound();
 entity.components.sound.pauseSound();
 entity3.components.sound.pauseSound();
