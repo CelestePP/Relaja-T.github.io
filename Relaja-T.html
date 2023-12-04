@@ -74,7 +74,7 @@
 
 	<a-marker id="seis" type="barcode" value="6" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
 			
-      <a-entity gltf-model="#modelo5" scale="3 3 3" rotation="-90 0 0" class="clickable" gesture-handler soundhandler></a-entity>
+        <a-entity gltf-model="#modelo5" scale="3 3 3" rotation="-90 0 0" class="clickable" gesture-handler soundhandler></a-entity>
         
 			
        </a-marker>
@@ -109,6 +109,8 @@ if (document.querySelector('#uno').object3D.visible == true) {
 entity2.components.sound.pauseSound();
 entity3.components.sound.pauseSound();
 entity4.components.sound.pauseSound();
+entity5.components.sound.pauseSound();
+entity6.components.sound.pauseSound();
 entity.components.sound.playSound();
 
 } 
@@ -116,6 +118,8 @@ else if (document.querySelector('#dos').object3D.visible == true) {
 entity.components.sound.pauseSound();
 entity3.components.sound.pauseSound();
 entity4.components.sound.pauseSound();
+entity5.components.sound.pauseSound();
+entity6.components.sound.pauseSound();
 entity2.components.sound.playSound();
 
 }
@@ -123,6 +127,8 @@ else if (document.querySelector('#tres').object3D.visible == true) {
 entity2.components.sound.pauseSound();
 entity.components.sound.pauseSound();
 entity4.components.sound.pauseSound();
+entity5.components.sound.pauseSound();
+entity6.components.sound.pauseSound();
 entity3.components.sound.playSound();
 
 }
@@ -130,6 +136,8 @@ else if (document.querySelector('#cuatro').object3D.visible == true) {
 entity2.components.sound.pauseSound();
 entity.components.sound.pauseSound();
 entity3.components.sound.pauseSound();
+entity5.components.sound.pauseSound();
+entity6.components.sound.pauseSound();
 entity4.components.sound.playSound();
 
 }
