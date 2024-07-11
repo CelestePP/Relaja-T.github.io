@@ -18,6 +18,14 @@
         
         <a-asset-item id="modelo" src="QUESILLO_GAMEZ.glb"></a-asset-item>
         <a-asset-item id="modelo1" src="QUESILLO_CHEPINA.glb"></a-asset-item>
+	<a-asset-item id="modelo2" src="QUESO_CREMA.obj"></a-asset-item>
+	<a-asset-item id="modelo2-mtl" src="QUESO_CREMA.mtl"></a-asset-item>
+        <a-asset-item id="modelo3" src="REQUESON_V2.obj"></a-asset-item>
+	<a-asset-item id="modelo3-mtl" src="REQUESON_V2.mtl"></a-asset-item>
+
+
+	
+
         
 	
 	
@@ -43,21 +51,21 @@
 	</a-marker>
 			
 			
-	<a-marker id="dos" type="barcode" value="3" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
+	<a-marker id="dos" type="barcode" value="2" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
 				
 	<a-entity gltf-model="#modelo1" scale="0.09 0.09 0.09" rotation="-90 0 0" class="clickable" gesture-handler soundhandler></a-entity>
 			
 	</a-marker>
       
-       <a-marker id="tres" type="barcode" value="4" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
+       <a-marker id="tres" type="barcode" value="3" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
 					
-        <a-entity gltf-model="#modelo2" scale="0.4 0.4 0.4" rotation="-90 0 0" class="clickable" gesture-handler soundhandler></a-entity>
+        <a-entity obj-model="obj:#modelo2; mtl:#modelo2-mtl " scale="0.4 0.4 0.4" rotation="-90 0 0" class="clickable" gesture-handler soundhandler></a-entity>
 			
 	</a-marker>
       
-      <a-marker id="cuatro" type="barcode" value="7" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
+      <a-marker id="cuatro" type="barcode" value="4" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
 			
-      <a-entity gltf-model="#modelo3" scale="1 1 1" rotation="-90 0 0" class="clickable" gesture-handler soundhandler></a-entity>
+      <a-entity obj-model="obj:#modelo3; mtl:#modelo3-mtl" scale="1 1 1" rotation="-90 0 0" class="clickable" gesture-handler soundhandler></a-entity>
         
 			
        </a-marker>
